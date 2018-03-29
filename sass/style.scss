@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
+
+body {
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+
+// Variables
+$light-font:    300;
+$normal-font:   400;
+$medium-font:   500;
+$bold-font:     700;
+$semibold-font: 900;
+
+// Main navigation
+
+#main-navigation {
+	background: #f4f8fc;
+	width: 100%;
+	.top-navigation {
+		display: flex;
+		align-items: center;
+		.left-side {
+			display: flex;
+			align-items: center;
+			.menu-btn {
+				margin-left: auto;
+				background: #1da7ff;
+				height: 40px;
+				width: 40px;
+				color: #fff;
+				border: none;
+				border-radius: 5px;
+				display: none;
+			}
+			.menu-btn:hover {
+				background: #69c0f7;
+			}
+		}
+		.right-side {
+			margin-left: auto;
+			ul {
+				padding: 0;
+				li {
+					list-style: none;
+					display: inline-block;
+					a {
+						color: #333;
+						text-decoration: none;
+						padding: 10px 15px;
+						opacity: 0.8;
+						display: inline-block;
+						transition: all 0.3s ease;
+						font-weight: $medium-font;
+						font-size: 16px;
+					}
+					a:hover {
+						opacity: 1;
+					}
+					.cta-btn {
+						background: #0cc962;
+						border-radius: 30px;
+						padding: 10px 20px;
+						color: #fff;
+						opacity: 1;
+						text-transform: uppercase;
+						font-size: 14px;
+					}
+					.cta-btn:hover {
+						background: #27f585;
+					}
+				}
+			}
+		}
+	}
+}
