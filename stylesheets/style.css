@@ -23,7 +23,7 @@ body {
 /* line 27, ../sass/style.scss */
 #main-navigation .top-navigation .left-side .menu-btn {
   margin-left: auto;
-  background: #1da7ff;
+  background: #0cc962;
   height: 40px;
   width: 40px;
   color: #fff;
@@ -33,7 +33,7 @@ body {
 }
 /* line 37, ../sass/style.scss */
 #main-navigation .top-navigation .left-side .menu-btn:hover {
-  background: #69c0f7;
+  background: #27f585;
 }
 /* line 41, ../sass/style.scss */
 #main-navigation .top-navigation .right-side {
@@ -76,4 +76,157 @@ body {
 /* line 70, ../sass/style.scss */
 #main-navigation .top-navigation .right-side ul li .cta-btn:hover {
   background: #27f585;
+}
+
+@media only screen and (max-width: 640px) {
+  /* line 80, ../sass/style.scss */
+  #main-navigation {
+    padding: 0;
+  }
+  /* line 82, ../sass/style.scss */
+  #main-navigation .container {
+    padding: 0;
+  }
+  /* line 84, ../sass/style.scss */
+  #main-navigation .container .top-navigation {
+    display: block;
+  }
+  /* line 86, ../sass/style.scss */
+  #main-navigation .container .top-navigation .left-side {
+    margin: 15px;
+  }
+  /* line 88, ../sass/style.scss */
+  #main-navigation .container .top-navigation .left-side .menu-btn {
+    display: block;
+  }
+  /* line 93, ../sass/style.scss */
+  #main-navigation .container .top-navigation .right-side ul {
+    background: #eef2f5;
+    margin: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  /* line 98, ../sass/style.scss */
+  #main-navigation .container .top-navigation .right-side ul li {
+    display: block;
+    border-bottom: 1px solid #d2ddea;
+    transition: all 0.3s ease;
+  }
+  /* line 102, ../sass/style.scss */
+  #main-navigation .container .top-navigation .right-side ul li a {
+    padding-left: 15px;
+    display: inline-block;
+  }
+  /* line 106, ../sass/style.scss */
+  #main-navigation .container .top-navigation .right-side ul li .cta-btn, #main-navigation .container .top-navigation .right-side ul li .cta-btn:hover {
+    background: none;
+  }
+  /* line 109, ../sass/style.scss */
+  #main-navigation .container .top-navigation .right-side ul li .cta-btn {
+    color: #333;
+    text-transform: none;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  /* line 118, ../sass/style.scss */
+  #main-navigation .container .top-navigation .right-side ul li:hover {
+    background: #dbe5ec;
+  }
+  /* line 122, ../sass/style.scss */
+  #main-navigation .container .top-navigation .right-side .navigation-active {
+    height: auto;
+  }
+}
+/* line 132, ../sass/style.scss */
+#hero-cover {
+  background: url("../images/john-mark-arnold-223717-unsplash.jpg") top center no-repeat;
+  background-size: cover;
+  height: 800px;
+  display: flex;
+  align-items: center;
+}
+/* line 138, ../sass/style.scss */
+#hero-cover .hero-text {
+  text-align: right;
+}
+/* line 140, ../sass/style.scss */
+#hero-cover .hero-text h1 {
+  color: #0c0c0c;
+  font-size: 55px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+/* line 146, ../sass/style.scss */
+#hero-cover .hero-text a {
+  text-decoration: none;
+  color: #f4f8fc;
+  font-size: 18px;
+  padding: 12px 22px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+/* line 155, ../sass/style.scss */
+#hero-cover .hero-text .cta-black {
+  background: #333333;
+}
+/* line 158, ../sass/style.scss */
+#hero-cover .hero-text .cta-black:hover {
+  background: #525252;
+}
+/* line 161, ../sass/style.scss */
+#hero-cover .hero-text .cta-green {
+  background: #0cc962;
+}
+/* line 164, ../sass/style.scss */
+#hero-cover .hero-text .cta-green:hover {
+  background: #0dd769;
+}
+
+@media only screen and (max-width: 1000px) {
+  /* line 171, ../sass/style.scss */
+  #hero-cover {
+    height: 450px;
+  }
+  /* line 174, ../sass/style.scss */
+  #hero-cover .hero-text h1 {
+    font-size: 38px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  /* line 182, ../sass/style.scss */
+  #hero-cover {
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  /* line 186, ../sass/style.scss */
+  #hero-cover .hero-text h1 {
+    font-size: 28px;
+  }
+  /* line 188, ../sass/style.scss */
+  #hero-cover .hero-text h1 .break-line {
+    display: none;
+  }
+}
+@media only screen and (max-width: 343px) {
+  /* line 197, ../sass/style.scss */
+  #hero-cover {
+    height: 300px;
+  }
+  /* line 200, ../sass/style.scss */
+  #hero-cover .hero-text h1 {
+    font-size: 28px;
+  }
+  /* line 202, ../sass/style.scss */
+  #hero-cover .hero-text h1 .break-line {
+    display: none;
+  }
+  /* line 206, ../sass/style.scss */
+  #hero-cover .hero-text a {
+    margin-bottom: 10px;
+    padding: 15px;
+    font-size: 15px;
+  }
 }

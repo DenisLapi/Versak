@@ -11,7 +11,7 @@ $light-font:    300;
 $normal-font:   400;
 $medium-font:   500;
 $bold-font:     700;
-$semibold-font: 900;
+$black-font: 900;
 
 // Main navigation
 
@@ -26,7 +26,7 @@ $semibold-font: 900;
 			align-items: center;
 			.menu-btn {
 				margin-left: auto;
-				background: #1da7ff;
+				background: #0cc962;
 				height: 40px;
 				width: 40px;
 				color: #fff;
@@ -35,7 +35,7 @@ $semibold-font: 900;
 				display: none;
 			}
 			.menu-btn:hover {
-				background: #69c0f7;
+				background: #27f585;
 			}
 		}
 		.right-side {
@@ -71,6 +71,142 @@ $semibold-font: 900;
 						background: #27f585;
 					}
 				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 640px) {
+    #main-navigation {
+    	padding: 0;
+    	.container {
+    		padding: 0;
+    		.top-navigation {
+	    		display: block;
+	    		.left-side {
+	    			margin: 15px;
+	    			.menu-btn {
+						display: block;
+	    			}
+	    		}
+	    		.right-side {
+	    			ul {
+	    				background: #eef2f5;
+	    				margin: 0;
+	    				height: 0;
+	    				overflow: hidden;
+	    				li {
+	    					display: block;
+	    					border-bottom: 1px solid #d2ddea;
+	    					transition: all 0.3s ease;
+	    					a {
+	    						padding-left: 15px;
+	    						display: inline-block;
+	    					}
+	    					.cta-btn, .cta-btn:hover  {
+	    						background: none;
+	    					}
+	    					.cta-btn {
+	    						color: #333;
+								text-transform: none;		
+								opacity: 0.8;
+								transition: all 0.3s ease;
+								font-weight: $medium-font;
+								font-size: 16px;
+	    					}
+	    				}
+	    				li:hover {
+	    					background: #dbe5ec;
+	    				}
+	    			}
+	    			.navigation-active {
+	    				height: auto;
+	    			}
+	    		}
+	    	}
+    	}
+    }
+}
+
+// Hero cover
+#hero-cover {
+	background: url("../images/john-mark-arnold-223717-unsplash.jpg") top center no-repeat;
+	background-size: cover;
+	height: 800px;
+	display: flex;
+	align-items: center;
+	.hero-text {
+		text-align: right;
+		h1 {
+			color: #0c0c0c;
+			font-size: 55px;
+			font-weight: $black-font;
+			text-transform: uppercase;
+		}
+		a {
+			text-decoration: none;
+			color: #f4f8fc;
+			font-size: 18px;
+			padding: 12px 22px;
+			border-radius: 6px;
+			transition: all 0.3s ease;
+			display: inline-block;
+		}
+		.cta-black {
+			background: #333333;
+		}
+		.cta-black:hover {
+			background: #525252;
+		}
+		.cta-green {
+			background: #0cc962;
+		}
+		.cta-green:hover {
+			background: #0dd769;
+		}
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	#hero-cover {
+		height: 450px;
+		.hero-text {
+			h1 {
+				font-size: 38px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	#hero-cover {
+		height: 300px;
+		background-color: rgba(0, 0, 0, 0.6);
+		.hero-text {
+			h1 {
+				font-size: 28px;
+				.break-line {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 343px) {
+	#hero-cover {
+		height: 300px;
+		.hero-text {
+			h1 {
+				font-size: 28px;
+				.break-line {
+					display: none;
+				}
+			}
+			a {
+				margin-bottom: 10px;
+				padding: 15px;
+				font-size: 15px;
 			}
 		}
 	}
