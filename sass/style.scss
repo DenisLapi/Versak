@@ -42,6 +42,7 @@ $black-font: 900;
 			margin-left: auto;
 			ul {
 				padding: 0;
+				height: auto;
 				li {
 					list-style: none;
 					display: inline-block;
@@ -70,6 +71,18 @@ $black-font: 900;
 					.cta-btn:hover {
 						background: #27f585;
 					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 641px) {
+	#main-navigation {
+		.top-navigation {
+			.right-side {
+				ul {
+					height: auto !important;
 				}
 			}
 		}
@@ -132,7 +145,7 @@ $black-font: 900;
 #hero-cover {
 	background: url("../images/john-mark-arnold-223717-unsplash.jpg") top center no-repeat;
 	background-size: cover;
-	height: 800px;
+	height: 700px;
 	display: flex;
 	align-items: center;
 	.hero-text {
@@ -207,6 +220,395 @@ $black-font: 900;
 				margin-bottom: 10px;
 				padding: 15px;
 				font-size: 15px;
+			}
+		}
+	}
+}
+
+// Our services
+
+#our-services {
+	padding: 150px 0;
+	.container {
+		h2 {
+			font-size: 35px;
+			font-weight: $medium-font;
+			color: #333333;
+			text-align: center;
+			margin: 0;
+			span {
+				color: #0cc962;
+			}
+		}
+		.services-row {
+			width: 780px;
+			margin: 100px auto 0;
+			.service-box {
+				text-align: center;
+				.service-image {
+					height: 100px;
+					position: relative;
+					img {
+						position: absolute;
+						bottom: 0;
+						left: 0;
+						right: 0;
+						margin: auto;
+					}
+				}
+				h3 {
+					color: #333;
+					font-size: 18px;
+					font-weight: $medium-font;
+					text-transform: uppercase;
+				}
+				p {
+					color: #333;
+					font-size: 15px;
+					font-weight: $light-font;
+					line-height: 1.5;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	#our-services {
+		padding: 80px 0;
+		h2 {
+			font-size: 30px;
+			.break-line {
+				display: none;
+			}
+		}
+		.services-row {
+			width: 100% !important;
+		}
+	}
+}
+
+@media only screen and (max-width: 650px) {
+	#our-services {
+		h2 {
+			font-size: 25px !important;
+			line-height: 1.5;
+		}
+	}
+}
+
+// Company description and images
+
+#company-desc-img {
+	background: #f6f6f6;
+	width: 100%;
+	.section-row {
+		margin: 0;
+		display: flex;
+		.col {
+			width: 50%;
+			padding: 0;
+		}
+		.padding-active {
+			padding: 20px;	
+			.content-box {
+				background: #fff;
+				width: 100%;
+				height: 100%;
+				display: flex;
+				align-items: center;
+				div {
+					h3 {
+						font-size: 30px;
+						font-weight: $bold-font;
+						color: #333;
+					}
+					h3::after {
+						content: "";
+						display: block;
+						width: 60px;
+						height: 4px;
+						background: #0cc962;
+						margin-top: 10px;
+					}
+					p {
+						color: #777;
+						font-size: 16px;
+						line-height: 1.6;
+					}
+					.cta-btn {
+						display: inline-block;
+						padding: 15px 30px;
+						color: #fff;
+						background: #0cc962;
+						border-radius: 3px;
+						text-decoration: none;
+						text-transform: uppercase;
+						font-size: 13px;
+						font-weight: $medium-font;
+						transition: all 0.3s ease;
+					}
+					.cta-btn:hover {
+						background: #19ef79;
+					}
+				}
+				.content-right {
+					margin: 50px;
+				}
+			}	
+		}
+	}
+	.image-box {
+		overflow: hidden;
+		img {
+			width: 100%;
+		}
+	}
+}
+
+@media only screen and (max-width: 1100px) {
+	#company-desc-img {
+		.section-row {
+			.col {
+				.image-box {
+					height: 100%;
+					img {
+						height: 100%;
+						width: auto;
+					}
+				}
+			}
+			.left-side {
+				display: none;
+			}
+		}
+	}
+}
+
+
+@media only screen and (max-width: 900px) {
+	#company-desc-img {
+		.section-row {
+			display: inline-block;
+			.col {
+				width: 100%;
+				background: #f4f8fc;
+				padding: 15px;
+				.image-box {
+					display: none !important;
+					margin: auto;	
+				}
+				.content-box {
+					padding: 15px !important;
+					h3 {
+						margin-top: 0;
+						font-size: 20px !important;
+					}
+					p {
+						font-size: 14px !important;
+					}
+					.content-right {
+						margin: 10px;
+					}
+				}
+			}
+		}
+	}
+}
+
+// Contact Form
+#contact-form {
+	.inner-container {
+		width: 975px;
+		margin: 100px auto;
+		.form-columns {
+			display: flex;
+		}
+		.form-content {
+			padding: 0 50px;
+			h3 {
+				font-size: 24px;
+				font-weight: $bold-font;
+				color: #333;
+				text-transform: uppercase;
+			}
+			p {
+				font-size: 16px;
+				color: #777;
+				line-height: 1.5;
+			}
+			.form-control {
+				margin-bottom: 20px;
+				input {
+					width: 100%;
+				}
+				input[type="text"], input[type="email"] {
+					font-size: 15px;
+					color: #555;
+					padding: 15px;
+					outline: none;
+					border: 1px solid #ccc;
+				}	
+				input[type="submit"] {
+					background: #0cc962;
+					color: #fff;
+					font-size: 14px;
+					font-weight: $bold-font;
+					text-transform: uppercase;
+					border: none;
+					padding: 15px 0;
+					outline: none;
+					transition: all 0.3s ease;
+				}
+				input[type="submit"]:hover {
+					background: #19ef79;
+				}
+  			}			
+		}
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	#contact-form {
+		.inner-container {
+			width: 100%;
+			margin: 50px 0 !important;
+			.image-column {
+				display: none;
+			}
+			.form-columns {
+				display: block;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	#contact-form {
+		.inner-container {
+			width: 100%;
+			margin: 50px 0 !important;
+			.image-column {
+				display: none;
+			}
+			.form-columns {
+				display: block;
+				.form-content {
+					padding: 0 10px;
+				}
+			}
+		}
+	}
+}
+
+// Footer
+footer {
+	.footer-content {
+		background: url("../images/brooke-cagle-609879-unsplash.jpg") center center no-repeat;
+		background-size: cover;
+		width: 100%;
+		position: relative;
+	}
+	.footer-background {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 888;
+		background: rgba(48,68,77,0.92);
+	}
+	.cta-content {
+		padding: 80px 0;
+		z-index: 999;
+		position: relative;
+		text-align: center;
+		h2 {
+			font-size: 32px;
+			font-weight: $bold-font;
+			color: #fff;
+			margin: 0 0 20px 0;
+		}
+		.footer-cta-buttons {
+			margin: 50px 0 0 0;
+			.cta-btn {
+				text-decoration: none;
+				padding: 12px 20px;
+				font-size: 14px;
+				text-transform: uppercase;
+				margin: 20px 5px;
+				transition: all 0.3s ease;
+			}
+			.cta-green {
+				background: #0cc962;
+				color: #fff;
+			}
+			.cta-green:hover {
+				background: #13e472;
+			}
+			.cta-white {
+				background: #fff;
+				color: #0cc962;
+			}
+			.cta-white:hover {
+				background: #f5f5f5;
+			}	
+		}	
+	}
+	.footer-bottom {
+		padding: 10px 0;
+		color: #333;
+		font-size: 14px;
+		.flex-container {
+			display: flex;
+			.right-side {
+				margin-left: auto;
+				ul {
+					list-style: none;
+					li {
+						display: inline-block;
+						a {
+							display: block;
+							text-decoration: none;
+							padding: 0 0 0 10px;
+							color: #333;
+							transition: all 0.3s ease;
+						}
+						a:hover {
+							color: #9aa0d0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	footer {
+		.cta-content {
+			h2 {
+				font-size: 24px !important;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	footer {
+		.footer-bottom {
+			.flex-container {
+				display: block;
+				ul {
+					padding: 0;
+					li {
+						a {
+							padding: 0 20px 0 0 !important;
+						}
+					}
+				}
 			}
 		}
 	}
